@@ -1,0 +1,12 @@
+.closed {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.button {
+    width: block;
+    background-color: bisque;
+}
