@@ -3,7 +3,7 @@ helloDOM
 **helloDOM** is my introduction and future reference for javascript manipulating the Document Object Model.
 
 #### Screenshot
-<div style="text-align:center"><img src="domChange/images/helloDOM.jpg" /></div>
+<div style="text-align:center"><img src="domChange/images/helloDOM.png" /></div>
 
 ## Usage
 * Open up and folder and double click the HTML file to open it in your browser

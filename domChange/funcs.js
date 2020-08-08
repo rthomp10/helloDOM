@@ -17,7 +17,7 @@ function imgHover() {
 }
 
 function imgNotHover() {
-    console.log("Not hovering over an image");
+    //console.log("Not hovering over an image");
 }
 
 images = document.getElementsByTagName("img");
