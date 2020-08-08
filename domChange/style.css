@@ -10,3 +10,13 @@
     width: block;
     background-color: bisque;
 }
+
+#component {
+    width: 300px;
+    transition: "all 2s";
+}
+
+#component:hover {
+    width: 350px;
+    transition: "all 2s";
+}
