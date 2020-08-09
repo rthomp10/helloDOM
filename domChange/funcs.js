@@ -1,4 +1,6 @@
-function $(x) {return document.getElementById(x);} 
+function $(x) {
+    return document.getElementById(x);
+} 
 
 function firstClicked() {
     $("firstPar").className = "open";
@@ -14,7 +16,9 @@ function secondClicked() {
 
 function imgHover() {
     $("changer").innerHTML = "Hovering on image " + this.alt;
-    console.log("Hovering on image " + this.alt)
+    console.log("Hovering on image " + this.alt);
+    $("floatingWolf").src = this.src;
+    document.getElementsByClassName("floater")[0].style.display = "block";
 }
 
 images = document.getElementsByTagName("img");
