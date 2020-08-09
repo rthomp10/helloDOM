@@ -11,13 +11,18 @@
     <body>
         <div id="app">
             <h1>{{animal}}</h1>
-            <img v-bind:src="images[0]" alt="A cool looking wolf" class="wolfImg">
+            
+            <!-- <img v-bind:src="images[0]" alt="A cool looking wolf" class="wolfImg">
             <br>
             <img v-bind:src="images[1]" alt="The intimidating wolf" class="wolfImg">
             <br>
             <img v-bind:src="images[2]" alt="Sus wolf" class="wolfImg">
             <br>
-            <img v-bind:src="images[3]" alt="Cute wolf couple" class="wolfImg">
+            <img v-bind:src="images[3]" alt="Cute wolf couple" class="wolfImg"> -->
+            <div v-for="image in images">
+                <img v-bind:src="image.file" alt="A cool looking wolf" class="wolfImg">
+            </div>
+        
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
