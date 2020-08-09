@@ -1,6 +1,10 @@
 var app = new Vue ({
     el: '#app',
     data: {
-        animal: 'wolves'
+        animal: 'Wolves',
+        images: ['./images/wolf.bmp',
+                'https://th.bing.com/th/id/OIP.AqkF_131YtWtRf_u10IMOQHaLH?pid=Api&rs=1',
+                'https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/50417W_DogSidebar_0.jpg?itok=B2nqMim0',
+                'http://wolf.org/wp-content/uploads/2013/08/wcs_10_5_09-66.jpg']
     }
 })

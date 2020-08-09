@@ -9,7 +9,16 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <div id="app">{{ animal }}</div>
+        <div id="app">
+            <h1>{{animal}}</h1>
+            <img v-bind:src="images[0]" alt="A cool looking wolf" class="wolfImg">
+            <br>
+            <img v-bind:src="images[1]" alt="The intimidating wolf" class="wolfImg">
+            <br>
+            <img v-bind:src="images[2]" alt="Sus wolf" class="wolfImg">
+            <br>
+            <img v-bind:src="images[3]" alt="Cute wolf couple" class="wolfImg">
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="main.js" ></script>
