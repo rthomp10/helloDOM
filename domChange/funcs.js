@@ -1,6 +1,4 @@
-function $(x) {
-    return document.getElementById(x);
-} 
+$ = (x) => { return document.getElementById(x) };
 
 function firstClicked() {
     $("firstPar").className = "open";
@@ -21,7 +19,7 @@ function imgHover() {
     document.getElementsByClassName("floater")[0].style.display = "block";
 }
 
-images = document.getElementsByTagName("img");
+let images = document.getElementsByTagName("img");
 for(let i = 0; i < images.length; i++) {
     images[i].addEventListener("mouseover", imgHover);
 }
