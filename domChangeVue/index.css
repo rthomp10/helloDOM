@@ -1,0 +1,31 @@
+.closed {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.button {
+    width: block;
+    background-color: bisque;
+}
+
+.floater {
+    position: fixed;
+    right: 5%;
+    top: 20px;
+    display: none;
+    height: 50px;
+    transition: all 200ms;
+}
+
+.wolf {
+    height: 100px;
+    transition: all 200ms;
+    padding: 5px;
+}
+
+.wolf:hover {
+    height: 103px;
+}
