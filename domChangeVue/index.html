@@ -12,7 +12,7 @@
         <div id="app">
             <h1>{{animal}}</h1>
             <span v-for="image in images">
-                <img v-bind:src="image.src" alt="image.alt" class="wolf">
+                <img v-bind:src="image.src" v-on:click="titleChange(image)" alt="image.alt" class="wolf">
             </span>
         
         </div>
