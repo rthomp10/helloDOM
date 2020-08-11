@@ -11,11 +11,21 @@ var app = new Vue ({
               alt: "Sus wolf" },
             { src: 'http://wolf.org/wp-content/uploads/2013/08/wcs_10_5_09-66.jpg',
               alt: "Cute wolf couple"}],
-        
+        correctWolfValue: true,
+        message: "Pick a wolf, any wolf."
     },
     methods: {
       titleChange: function (img) {
         this.animal = img.alt;
+      },
+
+      wolfValueOkay: function () {
+        if(this.message >= 0 || this.message < this.images.length) {
+          correctWolfValue = true;
+        }
+        else {
+          correctWolfValue = false;
+        }
       }
     }
 })

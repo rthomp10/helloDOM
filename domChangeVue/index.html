@@ -14,10 +14,12 @@
             <span v-for="image in images">
                 <img v-bind:src="image.src" v-on:click="titleChange(image)" alt="image.alt" class="wolf">
             </span>
-        
+            <br>
+            <input v-model="message"  v-onchange="wolfValueOkay()">
+            <span v-if="correctWolfValue">Nah, pick a number between 0 and {{images.length}}</span>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script src="main.js" ></script>
+        <script src="main.js"></script>
     </body>
 </html>
