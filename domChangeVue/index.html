@@ -14,6 +14,7 @@
             <span v-for="image in images">
                 <img v-bind:src="image.src" v-on:click="titleChange(image)" alt="image.alt" class="wolf">
             </span>
+            <br>
             <input v-model.number="wolfId" id="wolfId" placeholder="Pick a wolf">
             <span v-if="!wolfIdValid" style="color:maroon">Pick a number between 1 and {{images.length}}</span>
         </div>
