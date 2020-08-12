@@ -15,7 +15,7 @@
                 <img v-bind:src="image.src" v-on:click="titleChange(image)" alt="image.alt" class="wolf">
             </span>
             <input v-model.number="wolfId" id="wolfId" placeholder="Pick a wolf">
-            <span v-if="!wolfIdValid" style="color:maroon">Pick a number between 0 and {{images.length}}</span>
+            <span v-if="!wolfIdValid" style="color:maroon">Pick a number between 1 and {{images.length}}</span>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

@@ -14,11 +14,24 @@ var app = new Vue ({
         wolfId: ""
     },
     computed: {
-        wolfIdValid() { return (this.wolfId > 0 && this.wolfId < this.images.length + 1) || this.wolfId == ""; }
+        wolfIdValid() { 
+            if((this.wolfId > 0 && this.wolfId < this.images.length + 1) || this.wolfId == "" && typeof this.wolfId !== "number") {
+                if( !this.wolfId == "" ) 
+                    this.titleChange(this.wolfId-1);
+                return true; 
+            }
+            else { return false; }
+        }
     },
     methods: {
       titleChange: function (img) {
-        this.animal = img.alt;
+        if(typeof img === "object") {
+            this.animal = img.alt;
+            this.wolfId = "";
+        }
+        else if(typeof img === "number") {
+            this.animal = this.images[img].alt;
+        }
       }
     }
 })
