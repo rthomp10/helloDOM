@@ -12,7 +12,7 @@ var app = new Vue ({
             { src: 'http://wolf.org/wp-content/uploads/2013/08/wcs_10_5_09-66.jpg',
               alt: "Cute wolf couple"}],
         correctWolfValue: true,
-        message: "Pick a wolf, any wolf."
+        message: ""
     },
     methods: {
       titleChange: function (img) {
@@ -20,11 +20,13 @@ var app = new Vue ({
       },
 
       wolfValueOkay: function () {
-        if(this.message >= 0 || this.message < this.images.length) {
-          correctWolfValue = true;
+        if(this.message > 0 && this.message < this.images.length) {
+          this.correctWolfValue = true;
+          console.log("Wolf number in range");
         }
         else {
-          correctWolfValue = false;
+          this.correctWolfValue = false;
+          console.log("Wolf number out of range");
         }
       }
     }

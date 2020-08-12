@@ -15,8 +15,8 @@
                 <img v-bind:src="image.src" v-on:click="titleChange(image)" alt="image.alt" class="wolf">
             </span>
             <br>
-            <input v-model="message"  v-onchange="wolfValueOkay()">
-            <span v-if="correctWolfValue">Nah, pick a number between 0 and {{images.length}}</span>
+            <input v-model.number="message" type="number" placeholder="Pick a wolf, any wolf."  v-on:change="wolfValueOkay()">
+            <span v-if="!correctWolfValue">Pick a number between 1 and {{images.length}}</span>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
