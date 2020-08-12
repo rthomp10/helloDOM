@@ -1,3 +1,7 @@
+Vue.component('wolf-list', {
+  template: '<li>wolf id</li>'
+})
+
 var app = new Vue ({
     el: '#app',
     data: {
