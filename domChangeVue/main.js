@@ -1,11 +1,12 @@
 Vue.component('wolf-list', {
-  template: '<li>wolf id</li>'
+  props: ['wolf'],
+  template: '<li>{{wolf.alt}}</li>'
 })
 
 var app = new Vue ({
     el: '#app',
     data: {
-        animal: 'Wolves',
+        animal: 'wolves',
         images: [
             { src: './images/wolf.bmp',
               alt: "A cool looking wolf"},

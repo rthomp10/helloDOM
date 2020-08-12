@@ -24,7 +24,11 @@
             
             <!-- Create a list of ID #s for the wolf pictures -->
             <ol>
-                <wolf-list></wolf-list>
+                <wolf-list
+                    v-for="wolf in images"
+                    v-bind:wolf="wolf"
+                    v-bind:key="wolf.alt"
+                ></wolf-list>
             </ol>
         </div>
 
