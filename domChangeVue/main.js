@@ -11,23 +11,14 @@ var app = new Vue ({
               alt: "Sus wolf" },
             { src: 'http://wolf.org/wp-content/uploads/2013/08/wcs_10_5_09-66.jpg',
               alt: "Cute wolf couple"}],
-        correctWolfValue: true,
-        message: ""
+        wolfId: ""
+    },
+    computed: {
+        wolfIdValid() { return (this.wolfId > 0 && this.wolfId < this.images.length + 1) || this.wolfId == ""; }
     },
     methods: {
       titleChange: function (img) {
         this.animal = img.alt;
-      },
-
-      wolfValueOkay: function () {
-        if(this.message > 0 && this.message < this.images.length) {
-          this.correctWolfValue = true;
-          console.log("Wolf number in range");
-        }
-        else {
-          this.correctWolfValue = false;
-          console.log("Wolf number out of range");
-        }
       }
     }
 })
